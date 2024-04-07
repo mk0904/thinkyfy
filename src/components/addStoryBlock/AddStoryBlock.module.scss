@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100%;
     border-radius: 15px;
     cursor: pointer;
@@ -39,6 +39,7 @@
       align-items: center;
       position: absolute;
       bottom: 30px;
+      margin-bottom: 30px;
 
       div {
         display: flex;
@@ -50,7 +51,7 @@
         padding: 6px;
         border-radius: 10px;
         svg {
-          color: #1877f2;
+          color: #1facbb;
           width: 20px;
           height: 20px;
         }

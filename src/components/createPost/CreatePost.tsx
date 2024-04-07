@@ -57,7 +57,7 @@ const CreatePost: React.FC<CreatePostType> = ({ setCreatePostMode }) => {
         </div>
         <div className={s.text}>
           <textarea
-            placeholder="What do you want to talk about?"
+            placeholder="What would you like to share today?"
             onChange={(e) => setPostData({ ...postData, text: e.target.value })}></textarea>
         </div>
         {postData.image && (
