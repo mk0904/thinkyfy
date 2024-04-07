@@ -103,7 +103,7 @@ const Sidebar: React.FC = () => {
           <hr />
 
           <a
-            href="https://www.example.com"
+            href="https://leetcodescore-x.vercel.app/"
             id = "leaderboard"
             target="_blank"
             rel="noopener noreferrer"
