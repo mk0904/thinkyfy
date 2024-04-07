@@ -79,7 +79,7 @@
               color: #1d3a5f;
             }
             span {
-              color: rgb(145, 164, 191);
+              color: #1facbb;
             }
           }
         }
@@ -89,7 +89,7 @@
           span {
             display: flex;
             align-items: center;
-            background-color: #1877f2;
+            background-color: #1facbb;
             padding: 10px;
             gap: 5px;
             word-break: unset;
@@ -129,7 +129,7 @@
           cursor: pointer;
           transition: 0.2s ease-in-out;
           &:hover {
-            color: #1877f2;
+            color: #1facbb;
           }
         }
       }
@@ -137,14 +137,14 @@
         display: flex;
         border-radius: 5px;
         padding: 10px;
-        background-color: #1877f2;
+        background-color: #1facbb;
         color: white;
         white-space: nowrap;
         gap: 10px;
         cursor: pointer;
         transition: 0.3s ease-in-out;
         &:hover {
-          background-color: #1876f2d2;
+          background-color: #1a94a2;
         }
       }
     }

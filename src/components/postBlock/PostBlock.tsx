@@ -4,7 +4,7 @@ import { useUserData } from '../../hooks/useUsers';
 import { PostDataType } from '../../types/postData.type';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import s from './PostBlock.module.scss';
-import { faComment, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faBrain, faComment, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { auth } from '../../firebase';
 import { onLike } from '../../utils/onLike';
 import CommentsList from '../commentsList/CommentsList';
@@ -63,8 +63,8 @@ const PostBlock: React.FC<PostDataType> = ({ id, text, image, author, date, like
                 navigate('/login');
               }
             }}
-            icon={faHeart}
-            style={{ color: isPostLiked ? 'rgba(189, 9, 9, 0.979)' : '' }}
+            icon={faBrain}
+            style={{ color: isPostLiked ? '#1facbb' : '' }}
           />
           <span>{likes.length}</span>
         </div>
