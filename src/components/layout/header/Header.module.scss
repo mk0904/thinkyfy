@@ -48,6 +48,7 @@
   .container {
     display: flex;
     align-items: center;
+    background-color: rgb(0, 0, 0);
     justify-content: space-between;
     width: 100%;
     padding: 30px;
@@ -81,7 +82,7 @@
         align-items: center;
         border-radius: 10px;
         padding: 12px;
-        color: white;
+        color: rgb(0, 0, 0);
         background-color: #1877f2;
         gap: 10px;
         cursor: pointer;

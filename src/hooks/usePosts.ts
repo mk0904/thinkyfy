@@ -108,12 +108,13 @@ export const usePost = () => {
   const getPosts = async () => {
     const q = query(collection(db, "posts"), orderBy('date', 'desc'));
     onSnapshot(q, (data) => {
+      console.log("manish", data);
       const dataa = data.docs.map((doc) => ({ ...doc.data() as Record<string, unknown>, id: doc.id })) as any
       setPosts(dataa)
     })
   }
   const getUserPosts = async (id: string) => {
-    const q = query(collection(db, "posts"), where('author.id', '==', id), orderBy('date', 'desc'));
+    const q = query(collection(db, "posts"), orderBy('date', 'desc'));
     onSnapshot(q, (data) => {
       const dataa = data.docs.map((doc) => ({ ...doc.data() as Record<string, unknown>, id: doc.id })) as any
       setPosts(dataa)

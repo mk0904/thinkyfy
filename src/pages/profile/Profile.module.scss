@@ -22,7 +22,7 @@
           position: absolute;
           right: 30px;
           bottom: 20px;
-          background-color: #313131ab;
+          background-color: #1facbb;
           padding: 10px;
           cursor: pointer;
           border-radius: 5px;
@@ -31,7 +31,8 @@
           transition: 0.3s;
 
           &:hover {
-            background-color: #313131c7;
+            background-color: #bfbabac7;
+            color: black;
           }
         }
       }

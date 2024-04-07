@@ -33,6 +33,7 @@ export const useComments = (id?: string, comment?: string, setComment?: (arg: st
       orderBy("date", "desc")
     );
     onSnapshot(q, (data) => {
+      console.log("com", data);
       const dataa = data.docs.map((doc) => ({ ...doc.data() as Record<string, unknown>, id: doc.id })) as any
       setComments(dataa)
     })
