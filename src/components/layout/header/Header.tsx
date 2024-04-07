@@ -37,7 +37,7 @@ const Header: React.FC = () => {
                 enableBackground="new 0 0 500 500"
                 xmlSpace="preserve">
               </svg>
-              <img src="logo.png" alt="" width={"200rem"}/>
+              <img src="./logo.png" alt="" width={"250px"}/>
             </Link>
           </div>
           <div className={s.actions}>
