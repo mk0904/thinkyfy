@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faComment } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faComment, faTrophy, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'; // Added faExternalLinkAlt
 import s from './Sidebar.module.scss';
 import { auth } from '../../../firebase';
 import { useUserData } from '../../../hooks/useUsers';
@@ -25,6 +25,23 @@ const pages = [
     title: 'Messenger',
   },
 ];
+
+const leaderboardData = [
+  {
+    name: 'User 1',
+    score: 100,
+  },
+  {
+    name: 'User 2',
+    score: 90,
+  },
+  {
+    name: 'User 3',
+    score: 80,
+  },
+  // Add more leaderboard entries as needed
+];
+
 const Sidebar: React.FC = () => {
   const { userData } = useUserData(auth.currentUser?.uid);
 
@@ -82,6 +99,20 @@ const Sidebar: React.FC = () => {
               <span>Home</span>
             </Link>
           )}
+
+          <hr />
+
+          <a
+            href="https://www.example.com"
+            id = "leaderboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={s.page}
+            style={{ borderTop: "1px solid rgba(128, 128, 128, 0.2)" }}>
+            <FontAwesomeIcon icon={faTrophy} />
+            <span>Leaderboard</span>
+          </a>
+          {/* End External Link */}
         </div>
       </div>
     </div>
